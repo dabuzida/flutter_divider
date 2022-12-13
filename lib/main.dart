@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Checkbox',
+      title: 'Divider',
       home: MyContainer(),
     );
   }
@@ -25,13 +25,13 @@ class MyContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Checkbox'),
+        title: const Text('Divider'),
         elevation: 0,
         foregroundColor: Colors.white,
         backgroundColor: Colors.teal,
         centerTitle: true,
       ),
-      body: MyDivider(),
+      body: const MyDivider(),
     );
   }
 }

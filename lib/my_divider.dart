@@ -8,6 +8,21 @@ class MyDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      width: 500,
+      height: 500,
+      color: Colors.blue.shade100,
+      child: Row(
+        children: <Widget>[
+          VerticalDivider(
+            color: Colors.red,
+          ),
+          Divider(
+            thickness: 11,
+            color: Colors.red,
+          ),
+        ],
+      ),
+    );
   }
 }
